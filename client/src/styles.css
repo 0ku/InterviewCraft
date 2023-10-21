@@ -1,0 +1,50 @@
+/* styles.css */
+
+/* Title styling with text gradient */
+h1.title {
+  background-image: -webkit-linear-gradient(#007BFF, #00BFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 3em; /* Adjust the font size as needed */
+}
+
+/* Additional styles for the button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional styles for the input textbox */
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.custom-button {
+  border-radius: 48px;
+  background: var(--primary-base, #6B4EFF);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  /* New styles for hover effect */
+  transition: background-color 1s ease; /* Smooth transition */
+}
+
+.custom-button:hover {
+  background-color: rgba(43, 30, 95, 0.9); /* Darken the background on hover */
+}

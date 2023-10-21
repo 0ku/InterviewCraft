@@ -1,0 +1,63 @@
+/* InterviewUI.css */
+
+
+
+.get-topics-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto; /* Add margin to center the container horizontally */
+  max-width: 70vw;
+}
+.topic-delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 100px; /* Rounded corners */
+  margin-left: 5px; /* Adjust spacing between text and delete button */
+}
+
+.topic-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic {
+  background-color: #f1f1f1;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 15px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+}
+  
+  .input-area {
+    display: flex;
+    max-width: 50vw; /* Set a maximum width for the input area */
+    margin: auto;
+  }
+  
+  input {
+    flex-grow: 1;
+    padding: 8px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .generate-button {
+    text-align: center;
+    margin-top: 20px;
+    margin: auto;
+    padding: 30px
+  }
+  
+  .generate-button button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
