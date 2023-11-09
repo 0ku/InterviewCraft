@@ -9,6 +9,7 @@ h1.title {
   margin-top: 20px;
   display: inline-block;
   font-size: 3em; /* Adjust the font size as needed */
+  font-family: 'Calibri', sans-serif;
 }
 
 /* Additional styles for the button */
@@ -40,6 +41,7 @@ input {
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+  font-family: 'Calibri', sans-serif;
 
   /* New styles for hover effect */
   transition: background-color 1s ease; /* Smooth transition */

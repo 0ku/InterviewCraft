@@ -1,4 +1,5 @@
-from flask import Flask,request
+from flask import Flask,request,make_response
+from flask_cors import CORS
 import openai
 import g4f
 import json
@@ -27,9 +28,11 @@ def getGptJsonResponse(message):
             responseString+="}"
     print(responseString)
     finalJson = json.loads(responseString)
+    print("loaded successfully")
     return finalJson
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/members")
 def members():
@@ -39,7 +42,7 @@ def members():
 def getQuestions():
     reqData = json.loads(request.data)
     keywords = reqData['topics']
-    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a JSON format with the keys as '1', '2', etc."
+    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a JSON format with the format as {{\"1\": <question1>, \"2\": <question>,...}}"
     questions = getGptJsonResponse(message)
     return questions
 

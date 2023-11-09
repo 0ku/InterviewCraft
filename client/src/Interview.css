@@ -1,0 +1,70 @@
+/* Interview.css */
+
+.interview-container {
+    margin-top: 20px; /* Add more space between the textbox and the buttons */
+  }
+  
+  textarea {
+    font-family: 'Calibri', sans-serif; /* Set Calibri font for the text inside the textbox */
+    font-size: 16px; /* Set larger text size in the textbox */
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow down and to the right */
+  }
+  
+  .buttons-container {
+    margin-top: 10px; /* Add more space between the buttons and other elements */
+  }
+  .loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid rgb(100, 48, 196); /* Teal-colored border for the spinner */
+    border-radius: 50%;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animation for spinning */
+  }
+  
+  /* Keyframes for spin animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Add these styles to your CSS file */
+
+.submit-button {
+    background-color: teal;
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Additional styles for hover and focus effects */
+  .submit-button:hover {
+    background-color: #008080; /* Darker teal on hover */
+  }
+  
+  .submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 128, 0.7); /* Light teal box shadow on focus */
+  }
+  
+  .question-header {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.5em; /* Adjust the font size to match h2 */
+    opacity: 1; /* Start with opacity 0 for the fade-in effect */
+    animation: fadeIn 0.5s ease-in-out forwards; /* Animation for fade-in */
+    margin-bottom: 20px;
+  }
+  
+  
+  
