@@ -9,8 +9,7 @@ Interview Craft is a web application designed to enhance your interview preparat
    - Each interview consists of three thoughtfully curated questions to help users focus on specific areas of interest.
 
    <!-- Embed the video here -->
-   <iframe width="560" height="315" src="https://streamable.com/330q8c" frameborder="0" allowfullscreen></iframe>
-
+https://github.com/0ku/InterviewCraft/assets/52251304/0887ba5f-1334-4ee2-8386-81682feb09d5
    ![Image 1](https://github.com/0ku/InterviewCraft/assets/52251304/764f0f94-c575-4d39-92d9-4692aa0dee01.png)
    ![Image 2](https://github.com/0ku/InterviewCraft/assets/52251304/7465a875-7dad-4517-915a-5fee456b6949.png)
    --------------
