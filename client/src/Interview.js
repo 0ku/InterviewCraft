@@ -22,7 +22,7 @@ const Interview = (props) => {
     let final = []
     //console.log(props.answers)
     for (let question in props.answers) {
-      axios.post('http://127.0.0.1:5000/getFeedback', {
+      axios.post(process.env.REACT_APP_BACKEND_URL+'/getFeedback', {
         question: question,
         answer: props.answers[question],
       })

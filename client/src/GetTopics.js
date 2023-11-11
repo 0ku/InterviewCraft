@@ -19,7 +19,8 @@ const GetTopics = (props) => {
   };
 
   const getQuestions = () => {
-    axios.post('http://127.0.0.1:5000/getQuestions', {
+    console.log("test2 "+process.env)
+    axios.post(process.env.REACT_APP_BACKEND_URL+'/getQuestions', {
       topics: props.getTopics()
     })
     .then(function (response) {
