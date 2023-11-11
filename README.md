@@ -7,8 +7,6 @@ Interview Craft is a web application designed to enhance your interview preparat
 1. **Create Custom Interviews:**
    - Users can create personalized interview sessions by selecting topics of their choice.
    - Each interview consists of three thoughtfully curated questions to help users focus on specific areas of interest.
-
-   [](https://github.com/0ku/InterviewCraft/assets/52251304/26dd3898-73ba-4c4f-bdb0-a438b244114c)
    
    ![Image 2](https://github.com/0ku/InterviewCraft/assets/52251304/764f0f94-c575-4d39-92d9-4692aa0dee01.png)
    
@@ -19,6 +17,8 @@ Interview Craft is a web application designed to enhance your interview preparat
 2. **Speech-to-Text Integration:**
    - Experience a more immersive and realistic interview setting with the application's speech-to-text feature.
    - Answer interview questions verbally, allowing the app to transcribe your responses for a seamless and interactive experience.
+
+   [](https://github.com/0ku/InterviewCraft/assets/52251304/26dd3898-73ba-4c4f-bdb0-a438b244114c)
    
    ![Image 4](https://github.com/0ku/InterviewCraft/assets/52251304/f1b381ff-83ee-49da-9464-b9a6bfed8801.png)
    
