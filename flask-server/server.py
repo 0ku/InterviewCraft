@@ -15,8 +15,8 @@ def getGptJsonResponse(message):
             }
         ],
     )
-    print("check1")
     responseString = ""
+    print(response)
     for i, char in enumerate(response):
         if char != "{":
             continue
@@ -26,7 +26,7 @@ def getGptJsonResponse(message):
                 responseString += response[j]
                 j += 1
             responseString+="}"
-    print(responseString)
+    print("responseString is",responseString)
     finalJson = json.loads(responseString)
     print("loaded successfully")
     return finalJson
@@ -34,24 +34,22 @@ def getGptJsonResponse(message):
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/members")
-def members():
-    return {"members":["Member1","Mem2","mem3"]}
-
 @app.route("/getQuestions",methods=['POST'],endpoint='getQuestions')
 def getQuestions():
     reqData = json.loads(request.data)
     keywords = reqData['topics']
-    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a JSON format with the format as {{\"1\": <question1>, \"2\": <question>,...}}"
+    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a JSON format with the format: {{\"1\": <question1>, \"2\": <question>,...}} \
+        Do not use curly brackets within the json itself. Ensure that the JSON is valid"
     questions = getGptJsonResponse(message)
     return questions
 
-@app.route("/getFeedBack",methods=['POST'],endpoint='getFeedBack')
+@app.route("/getFeedback",methods=['POST'],endpoint='getFeedback')
 def getFeedBack():
     reqData = json.loads(request.data)
     question = reqData['question']
-    userResponse = reqData['answer']
-    message = f"Criticise my answer to this question, providing feedback and an improved example in JSON format with the keys \"positive\" and \"negative\" and \"improved\" Question: {question}. Answer: {userResponse}"
+    userResponse = reqData['answer']    
+    message = f"(Question: {question}. Answer: {userResponse}). Give a brief criticism of my answer to this question, providing feedback in the following JSON format: {{\"question\": <original question>,\"answer\": <original answer>, \"positive\": <positive points as a single string>, \"negative\": <negative points as a single string>, \"improved\": <improved answer as a single string>, \"score\": <integer from 0 to 100> }}. \
+        Do NOT write any code, math expressions, or make comments about grammar or spelling. Ensure that the JSON is valid"
     feedback = getGptJsonResponse(message)
     return feedback
 

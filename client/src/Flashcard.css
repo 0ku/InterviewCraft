@@ -1,0 +1,32 @@
+.flash-card-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .flash-card-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .circular-bar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circular-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .positive-points,
+  .negative-points {
+    margin-top: 20px;
+  }

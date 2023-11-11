@@ -1,0 +1,72 @@
+.loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height to your desired position */
+  }
+  
+  .loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid rgb(100, 48, 196); /* Teal-colored border for the spinner */
+    border-radius: 50%;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animation for spinning */
+  }
+  
+  /* Keyframes for spin animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .flash-card-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(189, 176, 255, 0.479); /* Purple backdrop */
+    border-radius: 30px; /* Rounded corners */
+    max-width: 90%; /* Set maximum width to 90% of the screen */
+    margin: 0 auto; /* Center the flash card horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .flash-card-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .flash-card-content {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+  }
+  
+  .progressbar-container {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+  }
+  
+  .split-sections {
+    margin-top: 20px; /* Add more vertical space */
+    display: flex;
+    /* Change to row layout (next to each other horizontally) */
+    flex-direction: row;
+  }
+  
+  .green-box,
+  .red-box {
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+    border-radius: 30px;
+  }
+  
+  .green-box {
+    background-color: #b4ffb4; /* Green fill color */
+  }
+  
+  .red-box {
+    background-color: rgb(255, 135, 135); /* Red fill color */
+  }
