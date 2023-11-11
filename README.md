@@ -14,6 +14,8 @@ Interview Craft is a web application designed to enhance your interview preparat
    - Experience a more immersive and realistic interview setting with the application's speech-to-text feature.
    - Answer interview questions verbally, allowing the app to transcribe your responses for a seamless and interactive experience.
 <img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/f1b381ff-83ee-49da-9464-b9a6bfed8801">
+<img width="960" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/f441b2da-22d2-41de-bdf2-ea8df067df13">
+
 
 3. **Evaluation and Feedback:**
    - Receive instant feedback on your answers, including scores and constructive criticism.
