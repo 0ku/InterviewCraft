@@ -47,6 +47,26 @@ input {
   transition: background-color 1s ease; /* Smooth transition */
 }
 
+.custom-button-margin-bottom {
+  border-radius: 48px;
+  background: var(--primary-base, #6B4EFF);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  font-family: 'Calibri', sans-serif;
+  margin-bottom: 20px;
+
+  /* New styles for hover effect */
+  transition: background-color 1s ease; /* Smooth transition */
+}
+
 .custom-button:hover {
   background-color: rgba(43, 30, 95, 0.9); /* Darken the background on hover */
 }

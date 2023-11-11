@@ -66,9 +66,11 @@ const FlashCard = (props) => {
 
   const Results = (props) => {
     const [loading, setLoading] = useState(true);
+
     const handleRestart = () => {
         props.restartInterview();
       };
+      
     useEffect(() => {
       if (props.results.length === 3) {
         setLoading(false);
@@ -95,7 +97,13 @@ const FlashCard = (props) => {
                 score={item.score}
               />
             ))}
-            <button className="restart-button" onClick={handleRestart}>Restart</button>
+            <button
+            className="custom-button"
+            onClick={handleRestart}
+            style={{ marginBottom: '20px' }}
+          >
+            Restart
+          </button>
           </div>
         )}
       </div>
