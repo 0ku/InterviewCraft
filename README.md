@@ -7,6 +7,10 @@ Interview Craft is a web application designed to enhance your interview preparat
 1. **Create Custom Interviews:**
    - Users can create personalized interview sessions by selecting topics of their choice.
    - Each interview consists of three thoughtfully curated questions to help users focus on specific areas of interest.
+
+   <!-- Embed the video here -->
+   <iframe width="560" height="315" src="https://streamable.com/330q8c" frameborder="0" allowfullscreen></iframe>
+
    ![Image 1](https://github.com/0ku/InterviewCraft/assets/52251304/764f0f94-c575-4d39-92d9-4692aa0dee01.png)
    ![Image 2](https://github.com/0ku/InterviewCraft/assets/52251304/7465a875-7dad-4517-915a-5fee456b6949.png)
    --------------
