@@ -20,9 +20,9 @@ Interview Craft is a web application designed to enhance your interview preparat
 3. **Evaluation and Feedback:**
    - Receive instant feedback on your answers, including scores and constructive criticism.
    - The app provides an improved version of your answers, helping you refine your responses and enhance your interview skills.
-   <img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/c4fef17e-48ba-4635-aee8-1779e716e685">
-   <img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/effb1666-4da3-462f-b1b8-9afb75945356">
-   <img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/898ed6a2-1655-4e1b-80b7-5f906e5a624b">
+<img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/c4fef17e-48ba-4635-aee8-1779e716e685">
+<img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/effb1666-4da3-462f-b1b8-9afb75945356">
+<img width="959" alt="image" src="https://github.com/0ku/InterviewCraft/assets/52251304/898ed6a2-1655-4e1b-80b7-5f906e5a624b">
 
 
 
