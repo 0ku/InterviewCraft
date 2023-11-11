@@ -12,8 +12,6 @@ Interview Craft is a web application designed to enhance your interview preparat
    
 
    [](https://github.com/0ku/InterviewCraft/assets/52251304/26dd3898-73ba-4c4f-bdb0-a438b244114c)
-
-
    [Image 1](https://github.com/0ku/InterviewCraft/assets/52251304/764f0f94-c575-4d39-92d9-4692aa0dee01.png)
    [Image 2](https://github.com/0ku/InterviewCraft/assets/52251304/7465a875-7dad-4517-915a-5fee456b6949.png)
    --------------
