@@ -76,3 +76,7 @@
 .red-box {
   background-color: rgb(255, 135, 135); /* Red fill color */
 }
+
+.original-answer {
+  margin-bottom: 40px;
+}

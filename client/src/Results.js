@@ -25,16 +25,22 @@ const FlashCard = (props) => {
       <div className="flash-card-container">
         <h2 className="flash-card-header">{props.question}</h2>
         <div className="flash-card-content">
+        <div className="original-answer">
+              <h3>Original Answer</h3>
+              <div> {props.originalAnswer}</div>
+            </div>
           <div className="progressbar-container">
-            <CircularProgressbar
-              value={percentage}
-              text={`${percentage}%`}
-              styles={{
-                root: { width: '80px', height: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' },
-                path: { stroke: color },
-                text: { fill: '#000', fontSize: '20px', dominantBaseline: 'middle', textAnchor: 'middle' },
-              }}
-            />
+          <CircularProgressbar
+  strokeWidth={15}
+  value={percentage}
+  text={`${percentage}%`}
+  styles={{
+    root: { width: '80px', height: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' },
+    path: { stroke: color },
+    trail: { stroke: '#d6d6d6' }, // Add this line for gray trail color
+    text: { fill: '#000', fontSize: '20px', dominantBaseline: 'middle', textAnchor: 'middle' },
+  }}
+/>
           </div>
           <div className="split-sections">
             <div className="green-box">
@@ -49,10 +55,6 @@ const FlashCard = (props) => {
             </div>
           </div>
           <div className="additional-info-box">
-            <div className="original-answer">
-              <h3>Original Answer</h3>
-              <div> {props.originalAnswer}</div>
-            </div>
             <div className="improved-answer">
               <h3>Improved Answer</h3>
               <div>{props.improvedAnswer}</div>
@@ -70,7 +72,7 @@ const FlashCard = (props) => {
     const handleRestart = () => {
         props.restartInterview();
       };
-      
+
     useEffect(() => {
       if (props.results.length === 3) {
         setLoading(false);

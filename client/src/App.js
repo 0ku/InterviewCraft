@@ -3,9 +3,19 @@ import './styles.css';
 import GetTopics from './GetTopics';
 import Interview from './Interview';
 import Results from './Results'
+import logo from "./logo.jpg"
 // Title component
 const Title = () => {
-  return <h1 className="title">Interview Craft</h1>;
+  return (
+    <div>
+    <div>
+      <img src={logo} alt="Logo" className="logo" />
+    </div>
+    <div>
+      <h1 className="title">Interview Craft</h1>
+    </div>
+    </div>
+  );
 };
 
 const Button = ({ onClick, children }) => {
