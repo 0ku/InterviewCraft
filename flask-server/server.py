@@ -38,9 +38,16 @@ CORS(app)
 def getQuestions():
     reqData = json.loads(request.data)
     keywords = reqData['topics']
-    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a JSON format with the format: {{\"1\": <question1>, \"2\": <question>,...}} \
-        Do not use curly brackets within the json itself. Ensure that the JSON is valid"
-    questions = getGptJsonResponse(message)
+    message = f"Give 3 questions for an interview related to the following topics: {keywords}. Give the questions as a single JSON format with the format: {{\"1\": <question1>, \"2\": <question>,...}} \
+        Ensure that the JSON is valid"
+    questions = ""
+    while True:
+        try:
+            questions = getGptJsonResponse(message)
+            break
+        except:
+            continue
+
     return questions
 
 @app.route("/getFeedback",methods=['POST'],endpoint='getFeedback')
@@ -48,9 +55,15 @@ def getFeedBack():
     reqData = json.loads(request.data)
     question = reqData['question']
     userResponse = reqData['answer']    
-    message = f"(Question: {question}. Answer: {userResponse}). Give a brief criticism of my answer to this question, providing feedback in the following JSON format: {{\"question\": <original question>,\"answer\": <original answer>, \"positive\": <positive points as a single string>, \"negative\": <negative points as a single string>, \"improved\": <improved answer as a single string>, \"score\": <integer from 0 to 100> }}. \
-        Do NOT write any code, math expressions, or make comments about grammar or spelling. Ensure that the JSON is valid"
-    feedback = getGptJsonResponse(message)
+    message = f"(Question: {question}. Answer: {userResponse}). Give a passage of criticism as a single JSON format with the format: {{\"question\": <original question>,\"answer\": <original answer>, \"positive\": <positive points as a single string>, \"negative\": <negative points as a single string, ignore any spelling or grammar mistakes>, \"improved\": <the original answer with some improvements as a single string>, \"score\": <integer from 0 to 100> }}. \
+        Ensure that the JSON is valid"
+    feedback = ""
+    while True:
+        try:
+            feedback = getGptJsonResponse(message)
+            break
+        except:
+            continue
     return feedback
 
 if __name__ == "__main__":
