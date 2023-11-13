@@ -35,8 +35,8 @@ const GetTopics = (props) => {
   const generateInterview = () => {
     // Add your logic for generating the interview
     console.log('Interview generated!');
-    if (props.getTopics().length < 3) {
-      alert('You need at least 3 topics!');
+    if (props.getTopics().length < 1) {
+      alert('You need at least 1 topic!');
     }
     else {
       getQuestions();
