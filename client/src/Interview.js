@@ -45,6 +45,7 @@ const Interview = (props) => {
     }));
     console.log("setting answer...", answer);
     setQuestionIndex((prev)=>prev+1);
+    setAnswer('');
     return;
   }
 
